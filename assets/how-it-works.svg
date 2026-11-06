@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="t d">
+  <title id="t">How KLIK AutoCut works</title>
+  <desc id="d">Three panels. One: a paper edit where retakes are struck out and the last complete take is kept. Two: Auto B-roll picking shots from a searchable Library. Three: subtitles written from the same transcript and sent to Premiere.</desc>
+  <defs>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#24262B"/><stop offset="1" stop-color="#18191D"/></linearGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FFFFFF" stop-opacity=".14"/><stop offset=".4" stop-color="#FFFFFF" stop-opacity=".03"/><stop offset="1" stop-color="#FFFFFF" stop-opacity=".02"/></linearGradient>
+    <radialGradient id="warm" cx=".5" cy=".5" r=".5"><stop stop-color="#C2501C" stop-opacity=".35"/><stop offset="1" stop-color="#C2501C" stop-opacity="0"/></radialGradient>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#F3A26B"/><stop offset=".55" stop-color="#C9643E"/><stop offset="1" stop-color="#3B2A33"/></linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#7FB0C9"/><stop offset="1" stop-color="#2C4A5E"/></linearGradient>
+    <linearGradient id="city" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#4A4E6E"/><stop offset="1" stop-color="#1E2030"/></linearGradient>
+    <clipPath id="frame"><rect width="1200" height="420" rx="28"/></clipPath>
+    <clipPath id="t1"><rect width="104" height="66" rx="9"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)" font-family="-apple-system, 'SF Pro Text', 'Segoe UI', Helvetica, Arial, sans-serif">
+    <rect width="1200" height="420" fill="#0F1012"/>
+    <ellipse cx="600" cy="460" rx="620" ry="190" fill="url(#warm)"/>
+
+    <!-- 1 Paper edit -->
+    <g transform="translate(36 36)">
+      <rect width="360" height="348" rx="24" fill="url(#glass)"/><rect x=".5" y=".5" width="359" height="347" rx="23.5" fill="none" stroke="url(#rim)"/>
+      <circle cx="34" cy="38" r="13" fill="#FF7A3D" fill-opacity=".16"/><text x="34" y="43" text-anchor="middle" fill="#FF9A66" font-size="13" font-weight="700">1</text>
+      <text x="56" y="44" fill="#ECEDEF" font-size="17" font-weight="600">Cut the A-roll</text>
+      <text x="24" y="74" fill="#6E737C" font-size="12.5">Retakes go; the last complete take stays.</text>
+      <g transform="translate(24 96)" font-size="13.5">
+        <rect width="312" height="44" rx="12" fill="#FFFFFF" fill-opacity=".03"/>
+        <text x="14" y="27" fill="#6E737C" text-decoration="line-through">So today we're going to look at—</text>
+        <rect y="52" width="312" height="44" rx="12" fill="#FFFFFF" fill-opacity=".03"/>
+        <text x="14" y="79" fill="#6E737C" text-decoration="line-through">So today, um, we're looking at</text>
+        <rect y="104" width="312" height="44" rx="12" fill="#FF7A3D" fill-opacity=".1"/>
+        <text x="14" y="131" fill="#ECEDEF">So today we're looking at three</text>
+        <circle cx="292" cy="126" r="9" fill="#4CC08A"/><path d="M288 126l3 3 5-6" fill="none" stroke="#0F1012" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect y="156" width="312" height="44" rx="12" fill="#FFFFFF" fill-opacity=".03"/>
+        <text x="14" y="183" fill="#C9CBD0">places most people walk past.</text>
+        <circle cx="292" cy="178" r="9" fill="#4CC08A"/><path d="M288 178l3 3 5-6" fill="none" stroke="#0F1012" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <g transform="translate(24 312)">
+        <rect width="98" height="22" rx="11" fill="#FFFFFF" fill-opacity=".05"/><text x="49" y="15.5" text-anchor="middle" fill="#A0A5AD" font-size="11.5">J-cuts</text>
+        <rect x="106" width="98" height="22" rx="11" fill="#FFFFFF" fill-opacity=".05"/><text x="155" y="15.5" text-anchor="middle" fill="#A0A5AD" font-size="11.5">Crossfades</text>
+        <rect x="212" width="100" height="22" rx="11" fill="#FFFFFF" fill-opacity=".05"/><text x="262" y="15.5" text-anchor="middle" fill="#A0A5AD" font-size="11.5">Play any line</text>
+      </g>
+    </g>
+
+    <!-- 2 B-roll -->
+    <g transform="translate(420 36)">
+      <rect width="360" height="348" rx="24" fill="url(#glass)"/><rect x=".5" y=".5" width="359" height="347" rx="23.5" fill="none" stroke="url(#rim)"/>
+      <circle cx="34" cy="38" r="13" fill="#FF7A3D" fill-opacity=".16"/><text x="34" y="43" text-anchor="middle" fill="#FF9A66" font-size="13" font-weight="700">2</text>
+      <text x="56" y="44" fill="#ECEDEF" font-size="17" font-weight="600">Place the B-roll</text>
+      <text x="24" y="74" fill="#6E737C" font-size="12.5">Your own footage, found by what's in it.</text>
+      <g transform="translate(24 94)">
+        <rect width="312" height="40" rx="12" fill="#FFFFFF" fill-opacity=".05"/>
+        <circle cx="22" cy="19" r="6" fill="none" stroke="#A0A5AD" stroke-width="1.6"/><path d="M26.5 23.5l4 4" stroke="#A0A5AD" stroke-width="1.6" stroke-linecap="round"/>
+        <text x="40" y="25" fill="#ECEDEF" font-size="13.5">sunset over the bridge</text>
+      </g>
+      <g transform="translate(24 148)">
+        <g><g clip-path="url(#t1)"><rect width="104" height="66" fill="url(#sky)"/><circle cx="70" cy="40" r="10" fill="#FFD7A8" fill-opacity=".9"/><path d="M0 50h104v16H0z" fill="#2B2230"/><path d="M0 50c20-10 40-14 52-14s32 4 52 14" fill="none" stroke="#1C1720" stroke-width="3"/></g>
+          <rect width="104" height="66" rx="9" fill="none" stroke="#FF7A3D" stroke-width="2"/></g>
+        <g transform="translate(104 0)"><g transform="translate(4 0)"><g clip-path="url(#t1)"><rect width="104" height="66" fill="url(#sea)"/><path d="M0 44c15-5 30 5 52 0s35 5 52 0v22H0z" fill="#1D3445"/></g></g></g>
+        <g transform="translate(216 0)"><g clip-path="url(#t1)" transform="translate(-8 0)"><rect x="8" width="104" height="66" fill="url(#city)"/><g fill="#2A2D44"><rect x="16" y="22" width="14" height="44"/><rect x="34" y="12" width="18" height="54"/><rect x="56" y="28" width="12" height="38"/><rect x="72" y="18" width="20" height="48"/></g><g fill="#F3C77A" fill-opacity=".8"><rect x="38" y="20" width="3" height="3"/><rect x="45" y="30" width="3" height="3"/><rect x="77" y="26" width="3" height="3"/><rect x="84" y="36" width="3" height="3"/></g></g></g>
+      </g>
+      <g transform="translate(24 228)" font-size="12">
+        <text fill="#A0A5AD"><tspan fill="#ECEDEF" font-weight="600">0:42</tspan>  "…places most people walk past"</text>
+        <text y="22" fill="#6E737C">Wide · golden hour · river · matched on words</text>
+      </g>
+      <g transform="translate(24 296)">
+        <rect width="150" height="38" rx="12" fill="#FF7A3D"/><text x="75" y="24" text-anchor="middle" fill="#1A0E07" font-size="13.5" font-weight="600">Place all</text>
+        <rect x="160" width="152" height="38" rx="12" fill="#FFFFFF" fill-opacity=".06"/><text x="236" y="24" text-anchor="middle" fill="#C9CBD0" font-size="13.5">Find in Library</text>
+      </g>
+    </g>
+
+    <!-- 3 Subtitles -->
+    <g transform="translate(804 36)">
+      <rect width="360" height="348" rx="24" fill="url(#glass)"/><rect x=".5" y=".5" width="359" height="347" rx="23.5" fill="none" stroke="url(#rim)"/>
+      <circle cx="34" cy="38" r="13" fill="#FF7A3D" fill-opacity=".16"/><text x="34" y="43" text-anchor="middle" fill="#FF9A66" font-size="13" font-weight="700">3</text>
+      <text x="56" y="44" fill="#ECEDEF" font-size="17" font-weight="600">Subtitles and finish</text>
+      <text x="24" y="74" fill="#6E737C" font-size="12.5">From the same transcript, timed to the cut.</text>
+      <g transform="translate(24 96)">
+        <rect width="312" height="150" rx="14" fill="#0B0C0E"/>
+        <rect width="312" height="150" rx="14" fill="url(#city)" fill-opacity=".55"/>
+        <g fill="#2A2D44" fill-opacity=".9"><rect x="40" y="58" width="22" height="92"/><rect x="66" y="34" width="28" height="116"/><rect x="230" y="50" width="26" height="100"/><rect x="260" y="70" width="20" height="80"/></g>
+        <rect x="64" y="106" width="184" height="28" rx="8" fill="#000" fill-opacity=".55"/>
+        <text x="156" y="125" text-anchor="middle" fill="#FFFFFF" font-size="14" font-weight="600">places most people walk past</text>
+      </g>
+      <g transform="translate(24 262)">
+        <rect width="74" height="16" rx="5" fill="#8B86DE" fill-opacity=".85"/><rect x="78" width="96" height="16" rx="5" fill="#8B86DE" fill-opacity=".85"/><rect x="178" width="62" height="16" rx="5" fill="#8B86DE" fill-opacity=".85"/><rect x="244" width="68" height="16" rx="5" fill="#8B86DE" fill-opacity=".85"/>
+      </g>
+      <g transform="translate(24 296)">
+        <rect width="312" height="38" rx="12" fill="#FFFFFF" fill-opacity=".06"/>
+        <path d="M16 19l4 4 8-9" fill="none" stroke="#4CC08A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="40" y="24" fill="#C9CBD0" font-size="13.5">Sent to Premiere · captions track</text>
+      </g>
+    </g>
+  </g>
+</svg>
