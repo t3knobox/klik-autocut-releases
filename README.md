@@ -21,43 +21,37 @@
 ## Install
 
 <p>
-  <a href="https://github.com/t3knobox/klik-autocut-releases/releases/latest/download/KLIK-AutoCut-Setup.exe"><img src="assets/download-windows.svg" alt="Download KLIK AutoCut for Windows" width="380"></a>
+  <a href="https://github.com/t3knobox/klik-autocut-releases/releases/latest/download/KLIK-AutoCut-mac.dmg"><img src="assets/download-macos.svg" alt="Download KLIK AutoCut for macOS" width="380"></a>
   &nbsp;
-  <a href="#on-a-mac"><img src="assets/download-macos.svg" alt="KLIK AutoCut for macOS: Apple silicon, set up with KLIK" width="380"></a>
+  <a href="https://github.com/t3knobox/klik-autocut-releases/releases/latest/download/KLIK-AutoCut-Setup.exe"><img src="assets/download-windows.svg" alt="Download KLIK AutoCut for Windows" width="380"></a>
 </p>
 
-[Release notes & checksums](https://github.com/t3knobox/klik-autocut-releases/releases/latest)
+**[Install on Mac →](INSTALL-MAC.md)** &nbsp; · &nbsp; **[Install on Windows →](INSTALL-WINDOWS.md)** &nbsp; · &nbsp; [Release notes & checksums](https://github.com/t3knobox/klik-autocut-releases/releases/latest)
+
+### On a Mac
+
+1. **Download** `KLIK-AutoCut-mac.dmg`, open it and drag **KLIK AutoCut** onto **Applications**.
+2. **Open it the first time** with right-click → **Open** → **Open**. On macOS 15 and later, if there's no Open button: **System Settings → Privacy & Security → Open Anyway**. The beta isn't notarised by Apple yet, so macOS asks once.
+3. **Sign in with your beta key** from KLIK.
+4. **Connect your accounts** on the Connections screen: Claude and ElevenLabs. Keys stay in your Keychain.
+
+Apple silicon, macOS 13 or newer. The full steps, including the optional models install for tagging footage: [INSTALL-MAC.md](INSTALL-MAC.md).
 
 ### On Windows
 
-1. **Download** the installer with the orange button (`KLIK-AutoCut-Setup.exe`).
-2. **Open it.** If Windows says it protected your PC, choose **More info**, then **Run anyway**. It installs just for you, with no administrator password.
-3. **Sign in with your beta key.** Paste the key KLIK sent you and choose **Sign in**. You only do this once.
-4. **Connect your accounts** on the Connections screen: Claude and ElevenLabs. Keys stay in Windows Credential Manager.
+1. **Download** `KLIK-AutoCut-Setup.exe` and open it. If Windows says it protected your PC, choose **More info**, then **Run anyway**. It installs just for you, with no administrator password.
+2. **Sign in with your beta key** from KLIK.
+3. **Connect your accounts** on the Connections screen: Claude and ElevenLabs. Keys stay in Windows Credential Manager.
+
+Windows 10 or 11, 64-bit. The full steps: [INSTALL-WINDOWS.md](INSTALL-WINDOWS.md).
 
 <p align="center">
   <img src="assets/screens/signin-dark.png" alt="KLIK AutoCut's first screen: Sign in with your beta key, marked Closed beta" width="560">
 </p>
 
-<details>
-<summary><strong>Windows protected your PC: why, and is it safe?</strong></summary>
-
-<br>
-
-The beta installer isn't code-signed yet, so Windows SmartScreen doesn't recognise the publisher. Choose **More info → Run anyway**. Every release lists the installer's SHA-256 in `SHA256SUMS.txt`; to compare, run `Get-FileHash .\KLIK-AutoCut-Setup.exe` in PowerShell.
-
-</details>
-
-### On a Mac
-
-The Mac beta runs alongside the AutoCut add-on for Premiere, and KLIK sets it up with you (Apple silicon only). There's no Mac installer to download yet. Ask your KLIK contact and we'll get you going in a short call.
-
 ## Updates
 
-AutoCut checks this page for a new version each time it opens.
-
-- **Windows:** when one is out, an **Update** button shows at the top with what changed. One click downloads it, checks it against the release's checksum, installs it and opens AutoCut again. Your episodes and settings stay as they are.
-- **Mac:** AutoCut updates with the add-on: **Settings → Connections → AutoCut add-on → Update**, then reopen the app.
+AutoCut checks this page for a new version each time it opens. When one is out, an **Update** button shows at the top with what changed. One click downloads it, checks it against the release's checksum, installs it and opens AutoCut again, on Mac and on Windows. Your episodes and settings stay as they are.
 
 You can check any time from **Settings → About → Check for updates**. Every release's notes are on the [releases page](https://github.com/t3knobox/klik-autocut-releases/releases).
 
@@ -80,7 +74,7 @@ AutoCut turns talking-head raws into a tidy edit inside your own Premiere projec
 | | |
 | --- | --- |
 | **Computer** | Windows 10 or 11 (64-bit), or a Mac with Apple silicon |
-| **Premiere Pro** | 2026, with the AutoCut add-on (KLIK helps you set it up) |
+| **Premiere Pro** | 2026, with the AutoCut add-on (KLIK helps you set it up). On a Mac, also Node.js |
 | **Claude** | Your own Claude subscription, signed in through Claude Code. AutoCut uses it to read the transcript and plan the edit |
 | **ElevenLabs** | An API key with Speech to Text access, for transcripts. Transcripts use that account's credits |
 | **Beta key** | From KLIK. You'll need it to sign in the first time |
@@ -99,7 +93,7 @@ Something not right? Tell your KLIK contact what you were doing and what you saw
 
 <br>
 
-This is KLIK AutoCut's public home for installers, release notes and update files. Each release carries the Windows installer (`KLIK-AutoCut-Setup-<version>.exe`, and the same file as `KLIK-AutoCut-Setup.exe` for the button above), `latest.json` and its signature, which the app checks before offering an update, and `SHA256SUMS.txt`. `revoked.json` lists beta keys that no longer work.
+This is KLIK AutoCut's public home for installers, release notes and update files. Each release carries the Mac disk image (`KLIK-AutoCut-<version>-mac.dmg`, and the same file as `KLIK-AutoCut-mac.dmg` for the button above), the Mac app zipped for updates (`KLIK-AutoCut-<version>-mac.zip`), the Windows installer (`KLIK-AutoCut-Setup-<version>.exe`, and the same file as `KLIK-AutoCut-Setup.exe`), `latest.json` and its signature, which the app checks before offering an update, and `SHA256SUMS.txt`. `revoked.json` lists beta keys that no longer work.
 
 The application source is kept in a separate private repository. GitHub's automatic **Source code** archives contain only this page's files, not the app.
 
